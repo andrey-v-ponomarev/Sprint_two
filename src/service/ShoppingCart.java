@@ -31,10 +31,11 @@ public class ShoppingCart {
         double sum = 0;
         for (Food item : items) {
             if (item instanceof Discountable) {
-                sum += item.getAmount() * item.getPrice();
-
+                Discountable discountable = (Discountable) item;
+                double discount = discountable.getDiscount(); // 0.6 или 0
+                sum += item.getAmount() * item.getPrice() * (1 - discount);
             } else {
-                sum += item.getAmount() * item.getPrice() * DEFAULT_DISCOUNT;
+                sum += item.getAmount() * item.getPrice();
             }
         }
         return sum;
