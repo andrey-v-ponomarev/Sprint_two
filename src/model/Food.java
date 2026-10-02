@@ -1,5 +1,6 @@
 package model;
 
+
 public abstract class Food implements Discountable{
 
     protected int amount;

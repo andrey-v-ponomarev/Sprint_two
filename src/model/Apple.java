@@ -1,5 +1,6 @@
 package model;
 
+
 import static model.constants.Colour.RED;
 import static model.constants.Discount.DEFAULT_DISCOUNT;
 
