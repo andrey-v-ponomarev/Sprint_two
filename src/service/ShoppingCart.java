@@ -27,6 +27,7 @@ public class ShoppingCart {
         return sum;
     }
 
+
     public double getTotalSumWithDiscount() {
         double sum = 0;
         for (Food item : items) {
